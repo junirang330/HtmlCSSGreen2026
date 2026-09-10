@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제 02</title>
+    <style>
+        body{
+            /* 글꼴종류 선택하는 CSS */
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        h3{
+            /* 바깥쪽 아래여백을 20px로 지정하는 CSS */
+            margin-bottom: 20px;
+        }
+        /* ul/li 의 기호를 제거하는 CSS */
+        ul{
+            /* li의 기호 삭제하는 CSS */
+            list-style: none;
+            padding-left : 0;
+            margin : 0;
+        }
+        ul li{
+            margin-bottom: 10px;
+        }
+        textarea{
+            width : 300px;
+            height : 80px;
+            margin-top: 5px;
+        }
+        label{
+            /* 글꼴을 굵게하는 CSS */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action = "#" method = "get">
+        <h3>간단한 설문</h3>
+        <!-- ul / li 이용 : 순서가 없는 목록을 작성할 때 유효하다. -->
+        <ul>
+            <li>
+                <label for = "fruit">좋아하는 과일 선택: </label>
+                <select id = "fruit">
+                    <option value = "사과" selected>사과</option>
+                    <option value = "바나나">바나나</option>
+                    <option value = "딸기">딸기</option>
+                    <option value = "포도">포도</option>
+                </select>
+            </li>
+            <!-- 좋아하는 음료 : datalist 이용 -->
+            <!-- select 태그와 다른점 : 사용자가 직접 입력할 수 있다. -->
+            <!-- 키보드로 입력하면, 해당 글자가 들어간 항목만 필터링(추출) 된다. -->
+            <!-- 반드시 <input> 태그에 추천 옵션을 제공방식으로 작성한다. -->
+            <!-- <input list = "list-ID"><datalist id = "list-ID"> 와 함께 연동해서 사용한다. -->
+            <li>
+                <label for = "drink">좋아하는 음료입력:</label>
+                <input type = "text" id = "drink" list = "drink-list"/>
+                <datalist id = "drink-list">
+                    <option value = "콜라"></option>
+                    <option value = "사이다"></option>
+                    <option value = "주스"></option>
+                    <option value = "커피"></option>
+                </datalist>
+            </li>
+            <!-- 3. 취미(복수 선택 가능) : checkbox 이용 -->
+            <li>
+                <label>취미(복수 선택 가능):</label>
+                <input type = "checkbox" value = "독서" name = "hobby"/>독서
+                <input type = "checkbox" value = "운동" name = "hobby"/>운동
+                <input type = "checkbox" value = "음악" name = "hobby"/>음악
+                <input type = "checkbox" value = "여행" name = "hobby"/>여행
+            </li>
+            <!-- 4. 성별 : radio 이용 -->
+            <li>
+                <label>성별 선택:</label>
+                <input type = "radio" value = "남성" name = "gender"/>남성
+                <input type = "radio" value = "여성" name = "gender"/>여성
+            </li>
+            <li>
+                <label for = "comment">추가의견:</label><br/>
+                <textarea id = "comment" name = "comment" placeholder="의견을 입력하세요"></textarea>
+            </li>
+
+        </ul>
+
+
+    </form>
+
+</body>
+</html>
