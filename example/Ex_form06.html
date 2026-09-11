@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 02</title>
+    <style>
+        *{
+            margin : 0; padding : 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif, arial;
+            background-color: #fff;
+        }
+        h1, p{
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 14px;
+        }
+        form{
+            background-color: #f2f2f2;
+            margin : 30px;
+            padding : 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+            margin : 0 auto;
+            width : 840px;
+            font-size: 13px;
+        }
+        ul{
+            /* 기호 없애기*/
+            list-style: none;
+        }
+        ul li{
+            /* 한줄당 간격 벌리기 */
+            margin-bottom: 20px;
+        }
+        /* list 클래스 라벨로 되어진 거, 인라인블록으로 잡기 */
+        .list{
+            display : inline-block;
+            width : 150px;
+            font-weight : bold;
+        }
+        /* 텍스트/비밀번호 입력창 CSS */
+        input[type='text'],
+        input[type='password']{
+            border-radius: 5px;
+            padding : 4px;
+            width : 150px;
+            border : 1px solid rgb(61, 60, 60);
+        }
+        /* 휴대폰번호 입력창 CSS */
+        input[type="tel"]{
+            padding : 4px;
+            width : 70px;
+            border-radius: 5px;
+            border : 1px solid rgb(61, 60, 60);
+        }
+        /* select 선택창 CSS */
+        select{
+            padding : 4px;
+            width : 70px;
+            border-radius: 5px;
+        }
+        .list2{
+            padding : 4px;
+            width : 150px;
+            border-radius: 5px;
+        }
+    
+
+        input[type='text']::placeholder,
+        input[type='password']::placeholder,
+        textarea::placeholder{
+            font-size : 11px;
+            
+        }
+
+        /* checkbox 및 raio CSS */
+        .gender_item label,
+        .receive_item label,
+        .interest_item label{
+            margin-right: 5px ;
+        }
+
+
+        /* 버튼 CSS */
+        .btn {
+            text-align: center;;
+        }
+        .btn button[type = "submit"],
+        .btn button[type = "reset"]{
+            cursor : pointer;
+            border : none;
+            border-radius: 5px;
+            font-size: 15px;
+            width : 80px;
+            height : 40px;
+        }
+        .btn button[type = "submit"]{
+            color : white;
+            background-color: rgb(41, 145, 41);
+        }
+        .btn button[type = "reset"]{
+            color : white;
+            background-color: rgb(182, 68, 39);
+        }
+
+        .btn button[type = "submit"]:hover{
+            background-color: green;
+        }
+        .btn button[type = "reset"]:hover{
+            background-color: rgb(173, 50, 20);
+        }
+        
+        /* 메모 크기 조절 */
+        textarea{
+            width : 300px;
+            height: 100px;
+            padding : 5px;
+            border-radius: 5px;
+            vertical-align: top;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <p>Become a member of Andrew's Company, and enjoy a variety of benefits.</p>
+    <form action = "#" method = "get">
+        <ul>
+            <li>
+                <label class = "list" for = "name">Name</label>
+                <input type = "text" placeholder ="이름 입력" id = "name"/>
+            </li>
+            <li>
+                <label class = "list" for = "ID">ID</label>
+                <input type = "text" placeholder ="아이디 입력" id = "ID"/>
+            </li>
+            <li>
+                <label class = "list" for = "pw">Password</label>
+                <input type = "password" placeholder ="비밀번호 입력" id = "pw"/>
+            </li>
+            <li>
+                <label class = "list" for = "pwchk">Confirm Password</label>
+                <input type = "password" placeholder ="비밀번호 다시 입력" id = "pwchk"/>
+            </li>
+            <li>
+                <label class = "list" for = "phone">Mobile</label>
+                <select>
+                    <option value = "010" checked>010</option>
+                    <option value = "011" checked>011</option>
+                    <option value = "019" checked>019</option>
+                </select>
+                <input type = "tel" id = "phone"/>-
+                <input type = "tel"/>
+            </li>
+            <li>
+                <label class = "list" for = "email">E-mail</label>
+                <input type = "text" id = "email"/>@
+                <input type = "text"/>
+                <select class = "list2">
+                    <option value = "Direct input">Direct input</option>
+                    <option value = "naver.com">naver.com</option>
+                    <option value = "daum.net">daum.net</option>
+                    <option value = "gmail.com">gmail.com</option>
+                </select>
+            </li>
+            <li class = "receive_item">
+                <span class = "list">Whether to receive email</span>
+                <input type="checkbox" id = "acceptance" name = "acceptance"/>
+                <label for="acceptance">Acceptance</label>
+            </li>
+            <li class = "interest_item">
+                <span class = "list">Interest</span>
+                <input type="checkbox" id = "movie" name = "interest"/>
+                <label for="movie">Movie</label>
+                <input type="checkbox" id = "theater" name = "interest"/>
+                <label for="theater">Theater</label>
+                <input type="checkbox" id = "travel" name = "interest"/>
+                <label for="travel">Travel</label>
+                <input type="checkbox" id = "mountain" name = "interest"/>
+                <label for="mountain">Mountain climbing</label>
+                <input type="checkbox" id = "visiting" name = "interest"/>
+                <label for="visiting">Visiting a restaurant</label>
+                <input type="checkbox" id = "volunteer" name = "interest"/>
+                <label for="volunteer">Volunteer</label>
+                <input type="checkbox" id = "etc" name = "interest"/>
+                <label for="etc">Etc</label>
+            </li>
+            <li class = "gender_item">
+                <span class = "list">Gender</span>
+                <input type = "radio" id = "man" name = "gender">
+                <label for = "man">Male</label>
+                <input type = "radio" id = "woman" name = "gender">
+                <label for = "woman">Female</label>
+            </li>
+            <li>
+                <label class = "list">Path learned</label>
+                <select class = "list2">
+                    <option checked>Choose</option>
+                    <option value = "Internet">Internet</option>
+                    <option value = "Acquaintance introduction">Acquaintance introduction</option>
+                    <option value = "Etc">Etc</option>
+                </select>
+            </li>
+            <li>
+                <label class = "list" for = "Memo">Memo</label>
+                <textarea id = "Memo" placeholder = "메모를 입력하세요."></textarea>
+            </li>
+        </ul>
+
+        <div class = "btn">
+            <button type = "submit">Sign up</button>
+            <button type = "reset">Cancel</button>
+        </div>
+    </form>
+
+    
+</body>
+</html>
