@@ -9,30 +9,31 @@
 <body>
     <h1>회원가입</h1>
     <form action="#" method = "get">
-        <caption>
-            필수 입력사항
-        </caption>
-
+        <p class = "right">
+            <span>*</span>필수 입력사항
+        </p>
+        <hr class = "bold">
         <ul>
             <li>
-                <span class = "group" for = "id">아이디</span>
+                <label class = "group" for = "id">아이디<span>*</span></label>
                 <input type = "text" id = "id" placeholder="아이디를 입력해주세요"/>
             </li>
             <li>
-                <span class = "group" for = "pw">비밀번호</span>
+                <label class = "group" for = "pw">비밀번호<span>*</span></label>
                 <input type = "password" id = "pw" placeholder="비밀번호를 입력해주세요"/>
             </li>
             <li>
-                <span class = "group" for = "pwchk">비밀번호확인</span>
+                <label class = "group" for = "pwchk">비밀번호확인<span>*</span></label>
                 <input type = "password" id = "pwchk" placeholder="비밀번호를 한번 더 입력해주세요"/>
             </li>
             <li>
-                <span class = "group" for = "name">이름</span>
+                <label class = "group" for = "name">이름<span>*</span></label>
                 <input type = "text" id = "name" placeholder="이름을 입력해 주세요"/>
             </li>
             <li>
-                <span class = "group" for = "email">이메일</span>
+                <label class = "group" for = "email">이메일<span>*</span></label>
                 <input type = "email" id = "email" placeholder="예: marketkurly"/>
+                <span class = "one">@</span>
                 <select>
                     <option>선택하기</option>
                     <option value = "naver.com" placeholder = "선택하기">naver.com</option>
@@ -46,17 +47,18 @@
                 </select>
             </li>
             <li>
-                <span class = "group" for = "phone">휴대폰</span>
+                <label class = "group" for = "phone">휴대폰<span>*</span></label>
                 <input type = "tel" id = "phone" placeholder="숫자만 입력해주세요."/>
                 <button class = "certify" type = "button">인증번호 받기</button> 
+                
             </li>
             <li>
-                <span class = "group" for "address">주소</span>
-                <button type = "button" id = "address">주소 검색</button>
+                <label class = "group" for = "address">주소<span>*</span></label>
+                <button class = "address" type = "button" id = "address">주소 검색</button><br/>
                 <div class = "explain">배송시에 따라 상품 정보가 달라질 수 있습니다.</div>
             </li>
             <li class = "gender_item">
-                <span class = "group">성별</span>
+                <label class = "group">성별</label>
                 <input type = "radio" name = "gender" id = "male"/>
                 <label for = "male">남자</label>
                 <input type = "radio" name = "gender" id = "female"/>
@@ -64,15 +66,46 @@
                 <input type = "radio" name = "gender" id = "none"/>
                 <label for = "none">선택안함</label>
             </li>
-            <li>
-                <label class = "group" for "birthday">생년월일</label>
-                <input type = "date"
+            <li class = "birthday_item">
+                <label class = "group" for = "birthday-year">생년월일</label>
+                <input type = "text" id = "birthday-year" placeholder = "YYYY"/>
+                <input type = "text" id = "birthday-month" placeholder="MM"/>
+                <input type = "text" id = "birthday-day" placeholder="DD"/>
+            </li>
+            <li class = "add">
+                <label class="group" for="add_input">추가입력사항</label>
+                <input type = "radio" id="add_input"/>
+                <label class = "friend_id" for="add_input">친구초대 추천인 아이디</label>
+            </li>
+            <hr class = "normal">
+            <label class="bold">이용약관동의<span>*</span></label>
+            <li class = "agree_item">
+                <input type = "radio" id = "total_agree"/>
+                <label for = "total_agree">전체 동의합니다</label><br/>
+                <label class="tmp">선택 항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</label>
+                <hr class = "thin">
+                <input type = "radio" id = "agree1"/>
+                <label for = "agree1">컬리 이용약관 동의 <span class = "choice">(필수)</span></label><br/>
+                <input type = "radio" id = "agree2"/>
+                <label for = "agree2">개인정보 수집·이용 <span class = "choice">(필수)</span></label><br/>
+                <input type = "radio" id = "agree3"/>
+                <label for = "agree3">이벤트 및 혜택정보 발송을 위한 수집·이용 <span class = "choice">(선택)</span></label><br/>
+                <input type = "radio" id = "agree4"/>
+                <label for = "agree4">광고성 정보 수신 <span class = "choice">(선택)</span></label><br/>
+                <input class = "advertise" type = "radio" id = "agree5"/>
+                <label for = "agree5">문자</label>
+                <input class = "advertise" type = "radio" id = "agree6"/>
+                <label for = "agree6">이메일</label>
+                <input class = "advertise" type = "radio" id = "agree7"/>
+                <label for = "agree7">카카오</label><br/>
+                <input type = "radio" id = "agree8"/>
+                <label for = "agree8">본인은 만 14세 이상입니다. <span class = "choice">(필수)</span></label>
             </li>
         </ul>
-
-
+        <hr class = "thin">
+        <div class = "btn2">
+            <button type = "submit">가입하기</button> 
+        </div>
     </form>
-
-
 </body>
 </html>

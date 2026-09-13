@@ -1,2 +1,247 @@
 @charset 'utf-8';
+/* 초기 세팅 */
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+/* body부분 */
+body{
+    font-family: sans-serif, arial;
+    font-size : 14px;
+    background-color: #f2f2f2;  /* 약간 회색 빛 배경 */
+
+}
+/* h1 : 회원가입 CSS */
+h1 {
+    text-align: center;  /* 글자 정중앙에 */
+    margin-bottom: 30px;   /* 폼과 간격 떨어뜨리기 */
+    margin-top: 20px;   /* 상단과 간격 떨어뜨리기 */
+}
+/* 상단에 글자, 우측으로 붙이기 */
+.right{
+    text-align: right;
+    margin-bottom: 10px;
+    font-size : 12px;
+}
+/* form 전체 CSS - 너비 및 자동 중앙으로 오도록*/
+form{
+    width : 700px;
+    background-color: white;  /* 배경은 흰색으로 */
+    box-shadow: 4px 6px 7px rgba(0,0,0,0.3);  /* 떠있는 느낌 CSS */
+    border-radius: 10px;
+    margin : 30px;  /* 외부 간격 */
+    padding : 30px;   /* 내부 간격 */
+    margin : 0 auto;  /* 폼은 항상 정중앙에 */
+    margin-bottom: 15px;  /* 밑이 너무 길어, 그림자 효과 보지 못해서, 아래에 여유공간 생성 */
+}
+/* hr 밑으로 margin 주기 */
+hr{
+    margin-bottom : 10px;
+}
+hr.bold{
+    border : 1px solid black;
+}
+hr.normal{
+    border : 0.7px solid rgb(83, 83, 83);
+}
+hr.thin{
+    border : 0.2px solid rgb(225, 225, 225);
+}
+/* ul 전체 CSS */
+ul{
+    list-style: none;  /* li 점 없애기 */
+}
+/* li CSS */
+li{
+    margin-bottom: 15px;  /* li별로 간격 떨어뜨리기 */
+    padding-left : 15px;   /* 안쪽으로 패딩 조금 주기 */
+}
+/* group 클래스 CSS : 인라인 -> 인라인블록으로 지정후, 너비 설정하기 */
+.group{
+    display : inline-block;
+    width : 150px;
+}
+/* 필수사항 * (span으로 분류된 부분) : 빨간색으로 처리하여, 필수사항 표시하기 */
+span{
+    color : red;
+}
+/* input 박스들+select CSS */
+input[type=text],
+input[type=password],
+input[type=tel]{
+    padding : 5px;
+    width : 270px;
+    border : 1px solid gray;
+    border-radius: 4px;
+    padding-left : 13px;  /* 글자 입력 살짝 떨어뜨리기 */
+}
+/* 이메일은 따로 지정 CSS - @ 랑 select 내부에 넣어보기*/
+input[type=email] {
+    padding : 5px;
+    width : 140px;
+    border : 1px solid gray;
+    border-radius: 4px;
+    padding-left : 13px;  /* 글자 입력 살짝 떨어뜨리기 */
+}
+/* @ 클래스 CSS */
+span.one{
+    font-size : 10px;
+    color : black;
+}
+/* 이메일 옆 select 박스 CSS */
+/* 외곽선 없애기 */
+select{
+    padding : 7px;
+    width : 120px;
+    border : 1px solid gray;
+    border-radius: 4px;
+    font-size: 10px;
+    color : gray;
+}
+/* input 박스들 안에 placeholder CSS */
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder,
+input[type=tel]::placeholder{
+    font-size: 10px;
+}
+/* explain 클래스 CSS - 글자 작게 / 왼쪽에 공간 있음 */
+/* 배송시에 따라 상품 정보가 달라질 수 있습니다. 글자부분 */
+.explain{
+    font-size: 10px;
+    color : gray;
+    margin-left : 155px;  /* 왼쪽에 155 px 마진 주기 */
+}
+/* 버튼 인증번호 받기 CSS */
+button.certify {
+    padding : 5px;
+    width : 120px;
+    vertical-align: middle;
+    border : 1px solid gray;
+    color : gray;
+    background-color: white;
+    font-size: 10px;
+    border-radius: 4px;
+}
+/* 버튼 주소검색 CSS */
+button.address{
+    padding : 5px;
+    width : 400px;
+    vertical-align: middle;
+    color : rgb(142, 62, 145);
+    border-color: rgb(142, 62, 145);
+    border-radius: 4px;
+    border : 1.5px solid rgb(142, 62, 145);
+    font-size: 10px;
+    background-color: white;
+}
+/* 버튼 가입하기 CSS */
+.btn2{
+    text-align: center;  /* 중앙으로 위치 */
+    margin-top : 40px;
+}
+.btn2 button{
+    border : none;  /* 외부 선 없애기 */
+    border-radius : 7px;  /* 굴곡 주기 */
+    background-color: #E6E6E6FF;
+    padding : 10px;
+    width : 640px;
+    font-size: 18px;
+}
+/* 가입하기 버튼에 CSS */
+.btn2 button:hover{
+    cursor: pointer;
+    background-color: rgb(142, 62, 145);
+    color : white;
+}
+/* 주소 검색 버튼에 hover CSS */
+button.address:hover{
+    cursor: pointer;
+    background-color: rgb(142, 62, 145);
+    color : white;
+}
+/* 인증번호받기 hover css */
+button.certify:hover{
+    cursor:pointer;
+    background-color: rgb(142, 62, 145);
+    color : white;
+}
+/* gender_item 성별 부분 CSS */
+.gender_item{
+    vertical-align: middle;  /* 약간 위로 있는거 중앙으로 맞추기 */
+}
+.gender_item input[type="radio"]{
+    margin-right : 10px;
+    background-color : rgb(142, 62, 145);
+    vertical-align: middle;
+}
+.gender_item label{
+    font-size : 12px;  /* 글자 크기만 줄이기 */
+}
+.gender_item label.group{
+    font-size: 14px;
+}
+.gender_item label[for = "male"],
+.gender_item label[for = "female"]{
+    margin-right : 50px;
+}
+/* 날짜 CSS */
+.birthday_item input[type="text"]{
+    background-color: white;
+    width : 100px;
+    text-align: center;  /* 글자 쓰면 중앙에 위치 */
+    padding-left:0;  /* 10px 로 된거 중앙으로 수정하기 */
+}
+.birthday_item input[type="text"]::placeholder{
+    color : gray;
+    font-size: 10px;
+    text-align: center;
+}
+/* 추가입력사항 CSS */
+li.add input[type="radio"]{
+    margin-right : 10px;
+    vertical-align: middle;
+}
+li.add label.friend_id {
+    font-size: 12px;
+}
+/* 이용약관동의 굵게 */
+label.bold{
+    font-weight:550;
+    display : inline-block;  /* 라벨은 인라인 요소이므로 변환 */
+    margin-bottom: 15px;
+    padding-left : 15px;  /* 안쪽으로 패딩15px 주기 */
+}
+/* 전체 라디오 버튼 조금 크게 */
+input[type="radio"]{
+    width : 18px;
+    height : 18px;
+    vertical-align: middle;     /* 가운데 높이로 맞추고 */
+    margin-right : 10px;    /* 오른쪽에 약간 벌리기 */
+}
+/* 이용약관 부분(agree_item) 좀 간격 띄우기 */
+.agree_item label{
+    display : inline-block;  /* 라벨은 인라인이므로, 간격주기위해서, 변환필요 */
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+/* 전체동의 CSS */
+.agree_item label[id="total_agree"]{
+    margin-bottom: 0px;
+}
+.agree_item label.tmp{  /* 전체 동의 바로 밑에 있는 설명 부분 CSS */
+    margin-left : 30px;
+    color : gray;
+    font-size: 11px;
+}
+/* (필수/선택) span 처리하기 */
+span.choice{
+    color : rgb(178, 178, 178);
+    font-size: 12px;
+}
+/* 문자/이메일/카카오 만 CSS */
+input.advertise{
+    margin-left : 20px;
+}
 
