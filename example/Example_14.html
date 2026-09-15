@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제05</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif, arial;
+            padding-top: 50px;
+            background-color: #f0f0f0;
+        }
+        .card_container{
+            width: 1300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .card_container .card{
+            /* card 가로배치 */
+            display: inline-block;
+            width: 300px;
+            padding-bottom: 20px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .card_container .card img{
+            width: 300px;
+            height: 200px;
+            border-radius: 10px 10px 0 0 ;
+        }
+        .card_container .card h2{
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .card_container .card p{
+            font-size: 13px;
+            color: #555;
+            white-space: nowrap;
+            /* 넘친 글자 숨기기 */
+            overflow: hidden;
+            /* 점점점 처리하기 */
+            text-overflow: ellipsis;
+            margin: 0 10px 0 10px ; 
+        }
+
+        /* .card{
+            width: 180px;
+            display: inline-block;
+            float: center;
+            text-align: center;;
+            margin: 10px;
+            background-color: white;
+            box-shadow: 5px 5px 6px rgba(0,0,0, 0.2);
+            border-radius: 10px;
+        }
+        p{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 12px;
+            text-align: center;
+            margin:0 10px 10px 10px;
+            color: gray;
+        }
+        h2{
+            font-size: 15px;
+            text-align: center;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+        img{
+            border-radius: 10px 10px 0 0;
+        } */
+        
+    </style>
+</head>
+<body>
+    <div class = "card_container">
+        <div class="card">
+            <img src="images/product1.jpg" alt = "product1" />
+            <h2>Wireless Earbuds</h2>
+            <p>This is a long product description text that will be truncated</p>
+        </div>
+        <div class="card">
+            <img src="images/product2.jpg" alt = "product2"/>
+            <h2>Smart Watch</h2>
+            <p>Track your health and fitness goals easily every single day</p>
+        </div>
+        <div class="card">
+            <img src="images/product3.jpg" alt = "product3"/>
+            <h2>Bluetooth Speaker</h2>
+            <p>Portable speaker with powerful sound and long battery life</p>
+        </div>
+    </div>
+    
+    
+    
+
+</body>
+</html>

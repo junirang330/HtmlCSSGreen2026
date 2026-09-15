@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제05</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif, arial;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .plan{
+            width: 240px;
+            display: inline-block;
+            float: center;
+            text-align: center;
+            background-color: white;
+            padding: 40px 15px 40px 15px;
+            border-radius: 13px;
+            font-size: 13px;
+            line-height: 25px;
+            
+        }
+        ul{
+            list-style: none;
+        }
+        hr{
+            border: 0.5px solid rgb(211, 210, 210);
+            margin: 10px 0 10px 0;
+        }
+        h2{  /* 요금제 이름 CSS */
+            font-size: 14px;
+        }
+        .price{  /* 가격 CSS */
+            color: gray;
+        }
+        span{   /* 금액부분만 */
+            font-size: 2rem;
+            color: #1E2A4A;
+        }
+        .plan:hover{
+            background-color: #1E2A4A;
+            color: white;
+            width: 200px;
+            height: 300px;
+        }
+        /* 버튼 CSS */
+        button{
+            display: inline-block;
+            background-color: #1E2A4A;
+            color: white;
+            padding: 5px;
+            border: none;
+            border-radius: 30px;
+            width: 
+        }
+        button:hover{
+            background-color: white;
+            color: #1E2A4A;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class = "plan">
+        <h2>Basic</h2>
+        <p class = "price"><span>$9</span> / month</p>
+        <hr>
+        <ul>
+            <li>
+                5 Projects
+            </li>
+            <li>
+                1GB Storage
+            </li>
+            <li>
+                Email Support
+            </li>
+        </ul>
+        <button>Choose Plan</button>
+    </div>
+    <div class = "plan">
+        <h2>Standard</h2>
+        <p class = "price"><span>$19</span> / month</p>
+        <hr>
+        <ul>
+            <li>
+                20 Projects
+            </li>
+            <li>
+                10GB Storage
+            </li>
+            <li>
+                Priority Support
+            </li>
+        </ul>
+        <button>Choose Plan</button>
+    </div>
+    <div class = "plan">
+        <h2>Premium</h2>
+        <p class = "price"><span>$39</span> / month</p>
+        <hr>
+        <ul>
+            <li>
+                Unlimited Projects
+            </li>
+            <li>
+                100GB Storage
+            </li>
+            <li>
+                24/7 Phone Support
+            </li>
+        </ul>
+        <button>Choose Plan</button>
+    </div>
+</body>
+</html>
