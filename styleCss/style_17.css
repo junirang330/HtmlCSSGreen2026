@@ -1,0 +1,69 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    /* text-align: center; */
+    padding: 30px;
+    
+}
+
+.site_header {
+    /* display: inline-block; */
+    overflow:hidden;
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* logo CSS - inline-block으로 변경 */
+.logo h1{
+    display: inline-block;
+    color: #1F5C42;
+    float: left;
+    margin-right: 60px;
+}
+nav{
+    /* display: inline-block; */
+    float: left;
+}
+ul{
+    list-style: none;
+    margin-top: 20px;
+}
+ul li{
+    display: inline-block;
+    padding: 0 25px 0 25px;
+}
+/* 점주 부분 CSS */
+.util{
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
+/* 점주님 공간 CSS */
+.owner{
+    font-size: 15px;
+    color: gray;
+    padding: 0 20px 0 60px;
+}
+/* 버튼 프랜차이즈 CSS */
+.franchise_btn{
+    background-color: #1f5c3f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 110px;
+    cursor: pointer;
+}
+hr{
+    border: none;
+    border-top: 2px solid #f2f2f2;
+    margin: 30px;
+}

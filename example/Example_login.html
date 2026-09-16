@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 로그인</title>
+    <link rel="stylesheet" href="/styleCss/style_login.css">
+</head>
+<body>
+    <h1>NAVER</h1>
+    <div class="login_wrap">
+        <div class="loing_box">
+            <div class="input">
+                <input type="text" class="id" placeholder = "아이디 또는 전화번호"/>
+                <br/>
+                <input type="password" class="pw" placeholder = "비밀번호"/>
+            </div>
+            <div class = "group">
+                <input type="checkbox" class="checkbox" id = "keep_login"/>
+                <label for = "keep_login">로그인 상태 유지</label>
+                <span class="ip">IP 보안</span>
+            </div><br/>
+            <div class="btn1">
+                <button>패스키 로그인</button>
+            </div>
+            <div class="btn2">
+                <button>로그인</button>
+            </div>
+            <br/>
+            <div class="foot">
+                <a href = "https://nid.naver.com/nidlogin.login?mode=qrcode&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1">
+                    QR 코드 로그인
+                </a>
+                <span class="slide">｜</span>
+                <a href = "https://nid.naver.com/nidlogin.login?mode=number&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1">
+                    일회용 번호 로그인
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

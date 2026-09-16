@@ -13,58 +13,112 @@
         body{
             font-family: sans-serif, arial;
             padding: 20px;
-            background-color: #f0f0f0;
+            background-color: #f2f2f2;
+            text-align: center;
         }
+        /* plan 클래스의 공통 CSS */
+        /* plan을 모두 div 태그로 작성하므로 가로로 배치안됨 */
+        /* 가로로 배치하기 위해서 display : inline-block; */
+        /* 로 변경한다. 이유는 div 태그는 block태그로 가로 배치가 안되고 세로 배치가 된다. */
         .plan{
-            width: 240px;
+            width: 260px;
             display: inline-block;
             float: center;
             text-align: center;
             background-color: white;
-            padding: 40px 15px 40px 15px;
-            border-radius: 13px;
-            font-size: 13px;
-            line-height: 25px;
-            
-        }
-        ul{
-            list-style: none;
-        }
-        hr{
-            border: 0.5px solid rgb(211, 210, 210);
-            margin: 10px 0 10px 0;
-        }
-        h2{  /* 요금제 이름 CSS */
+            padding: 30px 20px;
+            border-radius: 15px;
             font-size: 14px;
+            margin: 0 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
-        .price{  /* 가격 CSS */
-            color: gray;
-        }
-        span{   /* 금액부분만 */
-            font-size: 2rem;
-            color: #1E2A4A;
-        }
-        .plan:hover{
+        /* featured 카드의 CSS 부분 */
+        .featured{   /* standard 추천요금제 */
+            width: 280px;
             background-color: #1E2A4A;
             color: white;
-            width: 200px;
-            height: 300px;
+            padding: 40px 15px 40px 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.8);
         }
-        /* 버튼 CSS */
+        /* 반드시 부모인 ul에서 list-style 제거한다. */
+        ul{
+            list-style: none;
+            text-align: left;
+        }
+        ul li{
+            padding-left: 15px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        hr{  /* 선 CSS */
+            border: none;  /* border를 없애야, 선이 얇아진다. ★★★ */
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        .featured hr{
+            border-top: 1px solid #4a5a7a;
+        }
+        .plan h2{  /* 요금제 이름 CSS */
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .plan .price{
+            font-size: 14px;
+            color: #666;
+        }
+        .featured .price{
+            color: #ddd;
+        }
+        .price span{   /* 공통 span 금액부분 */
+            font-size: 2rem;
+            color: #1E2A4A;
+            font-weight: bold;
+        }
+        .featured span{  /* standard 금액부분 */
+            color: #ffffff;
+        }
+        /* 버튼 공통 CSS */
         button{
+            /* 너비 100% 의미 : 부모 가로사이즈 만큼의 크기가 자동으로 지정됨 */
+            width: 100%;
             display: inline-block;
             background-color: #1E2A4A;
             color: white;
-            padding: 5px;
+            padding: 13px;
             border: none;
-            border-radius: 30px;
-            width: 
+            border-radius: 20px;
+            margin-top: 20px;
+            font-size: 14px;
+            cursor: pointer;
         }
-        button:hover{
-            background-color: white;
+        .featured button{
+            background-color: #ffffff;
             color: #1E2A4A;
         }
+        .plan button:hover{   /* 일반 버튼 CSS */
+            background-color: #445891;
+        }
+        .featured button:hover{   /* 추천요금제 버튼 CSS */
+            background-color: rgba(255, 255, 255, 0.692);
+        }
         
+        /* 가상요소 선택자
+            ::before, ::after의 요소가 존재한다.
+            실제로 존재하지 않는 가상의 요소를 HTML 앞에 또는 
+            HTML 뒤에 삽입해주는 선택자이다.
+            단, 가상요소 선택자는 반드시 내용(content)가 존재해야 한다.
+            content: '가상문자'
+            가상문자는 아이콘, 기호, 텍스트 모두 가능
+            이모지콘 : 윈도우키 + .  ✔️✔️✔️
+            특수문자 : 한글자음 + 한자  √
+            유니코드 : \2713 => √
+        */
+        li::before{
+            content: '\2713🤩  ';
+            color: #2ecc71;
+            font-weight: bold;
+        }
 
     </style>
 </head>
@@ -72,51 +126,33 @@
     <div class = "plan">
         <h2>Basic</h2>
         <p class = "price"><span>$9</span> / month</p>
-        <hr>
+        <hr/>
         <ul>
-            <li>
-                5 Projects
-            </li>
-            <li>
-                1GB Storage
-            </li>
-            <li>
-                Email Support
-            </li>
+            <li>5 Projects</li>
+            <li>1GB Storage</li>
+            <li>Email Support</li>
         </ul>
         <button>Choose Plan</button>
     </div>
-    <div class = "plan">
+    <div class = "plan featured">
         <h2>Standard</h2>
         <p class = "price"><span>$19</span> / month</p>
-        <hr>
+        <hr/>
         <ul>
-            <li>
-                20 Projects
-            </li>
-            <li>
-                10GB Storage
-            </li>
-            <li>
-                Priority Support
-            </li>
+            <li>20 Projects</li>
+            <li>10GB Storage</li>
+            <li>Priority Support</li>
         </ul>
         <button>Choose Plan</button>
     </div>
     <div class = "plan">
         <h2>Premium</h2>
         <p class = "price"><span>$39</span> / month</p>
-        <hr>
+        <hr/>
         <ul>
-            <li>
-                Unlimited Projects
-            </li>
-            <li>
-                100GB Storage
-            </li>
-            <li>
-                24/7 Phone Support
-            </li>
+            <li>Unlimited Projects</li>
+            <li>100GB Storage</li>
+            <li>24/7 Phone Support</li>
         </ul>
         <button>Choose Plan</button>
     </div>
