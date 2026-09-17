@@ -13,8 +13,8 @@ body{
 /* profile_header 전체 CSS */
 .profile_header{
     border: 1px solid black;
-    padding: 25px;
-    width: 480px;
+    padding: 30px;
+    width: 460px;
     overflow: hidden;
 }
 /* img 영역 CSS */
@@ -22,39 +22,39 @@ body{
     height: 150px;
     width: 150px;
     border: none;
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(224, 223, 223);
     border-radius: 50%;
     float: left;
-    /* padding: 20px; */
-    margin: 0 auto;
-    /* margin-right: 7px; */
-    /* text-align: center; */
+    /* margin: 0 auto; */
+    cursor: pointer;
 }
 /* JH 글자 오는부분 */
 .profile_img span{
     display: block;
     height: 150px;
     color:  rgb(136, 135, 135);
-    /* margin: 20px 30px; */
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
-    line-height: 150px;
-    /* margin: 0 auto; */
+    line-height: 145px;
 }
 /* info 영역 CSS */
 .profile_info{
-    width: 230px;
+    width: 200px;
     float: left;
     margin-left: 40px;
 }
 /* 첫번째 줄 CSS */
-.first_line{
-    width: 300px;
+.first_line,
+.second_line,
+.third_line{
+    width: 200px;
 }
 .first_line h2{
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     color: black;
+    font-weight: bold;
 }
 /* 버튼 CSS */
 .first_line button{
@@ -75,6 +75,7 @@ li{
     /* 인라인 블록으로 해서, 한줄로 표현 */
     display: inline-block;
     margin-right: 27px;
+    cursor: pointer;
 }
 .first_line,
 .second_line{
@@ -87,4 +88,8 @@ li{
 .number{
     font-weight: bold;
     color: black;
+}
+/* 호버 */
+.first_line button:hover{
+    background-color: #0268ac;
 }

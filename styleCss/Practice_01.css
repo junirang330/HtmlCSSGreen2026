@@ -1,0 +1,117 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 17;
+    padding: 20px;
+}
+.group{
+    /* position: relative; */
+    width: 2000px;
+    padding: 5px;
+}
+.package{
+    /* display: inline-block; */
+    /* overflow: hideen; */
+    width: 500px;
+    margin: 50px;
+}
+.package .box1{
+    width: 700px;
+    overflow: hidden;
+    
+}
+.package .box2{
+    margin-top: 30px;
+    width: 700px;
+    overflow: hidden;
+}
+.package .box3{
+    margin-top: 30px;
+    width: 700px;
+    overflow: hidden;
+}
+.item{
+    display: inline-block;
+    float: left;
+    position: relative;
+    
+    /* width: 96px; */
+    /* height: 96px; */
+}
+.description{
+    width: 60px;
+    float: left;
+    margin-left: 25px;
+}
+.badge{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 8px;
+    border-radius: 15px 0 10px 0;
+    float: left;
+    width: 105px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.membership{
+    background-color: #5855D6;
+}
+.remain_time{
+    background-color: #FF382D;
+}
+img{
+    z-index: 50;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.img{
+    overflow: hidden;
+}
+.origin_price,
+.star,
+.review {   /* 원래가격 + 별 / 리뷰 CSS */
+    color: lightgray;
+}
+.discount{  /* 할인가  CSS */
+    font-weight: bold;
+    color: red;
+}
+.price{   /* 최종가격 CSS */
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+/* 별 CSS */
+.name::before{
+     content: ' ★';
+
+}
+/* description 부분에서 첫번째 줄 CSS*/
+.first_line{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 350px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/* description 부분에서 두번째 줄 CSS*/
+.second_line{
+    /* 한줄배치 */
+    /* display: inline-block; */
+    word-spacing: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+
+}
+.third_line{
+    width: 300px;
+}

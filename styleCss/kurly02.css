@@ -1,0 +1,167 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 20px;
+}
+.group{
+    width: 720px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+/* header CSS */
+header{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.total_cnt{
+    display: inline-block;
+    /* margin-right: 240px; */
+}
+ul{
+    list-style: none;
+    display: inline-block;
+    /* margin-right: 100px; */
+    float: right;
+}
+li{
+    display: inline-block;
+    cursor: pointer;
+    
+}
+li.divide::before{
+    content: '｜';
+
+}
+/* img 이미지 CSS */
+img{
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* 아이템 CSS */
+.item{
+    position: relative;
+    /* width: 220px; */
+}
+/* 배지 CSS */
+.badge{
+    position: absolute;
+    color: white;
+    background-color: rgb(165, 86, 238);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+}
+.item4 .badge,
+.item6 .badge{
+    display: none;
+}
+/* line 공통 CSS */
+.line{
+    width: 720px;
+    margin-bottom: 60px;
+    /* vertical-align: top; */
+}
+.section{
+    vertical-align: top;
+    display: inline-block;
+    width: 220px;
+    /* margin-right: 25px; */
+    /* margin-bottom: 40px; */
+}
+.sec1,
+.sec2,
+.sec4,
+.sec5,
+.sec7,
+.sec8{
+    margin-right: 25px;
+}
+/* section 사이 공간 CSS */
+/* .sec1,
+.sec2 {
+    margin-right: 10px;
+} */
+
+/* item별로 CSS
+.item{
+    margin-bottom: 40px;
+} */
+/* cart  부분 CSS */
+.cart{
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+.cart:hover{
+    background-color: rgb(240, 230, 240);
+    font-weight: bold;
+}
+/* 설명부분 details CSS */
+.details{
+    cursor: pointer;
+    color: gray;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.detail {
+    display: block;
+}
+/* 상품이름 CSS */
+.name{
+    font-size: 14px;
+    color: black;
+}
+
+/* 할인 CSS */
+.discount{
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* 총금액 CSS */
+.price{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* Kurly Only CSS */
+.only{
+    cursor: pointer;
+    color:rgb(111, 27, 190);
+    font-weight: 500;
+    background-color: rgb(230, 228, 228);
+    padding: 3px;
+    width: 80px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+.sec6 .only,
+.sec9 .only{
+    display: none;
+}
+/* 품절임박 css */
+.emergency{
+    color : red;
+    font-weight: bold;
+    font-size: 14px;
+}
+/* a CSS */
+a{
+    text-decoration: none;
+    color: black;
+}
