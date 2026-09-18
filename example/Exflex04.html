@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인04</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            font-size: 16px;
+            background-color: #f2f2f2;
+        }
+        /* form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            } */
+        .sign_box{
+            margin: 40px auto;  
+            background-color: #ffffff;
+            width: 400px;
+            border-radius: 5px;
+            padding: 40px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+        }
+        /* 부모에 display: flex를 지정함으로써, 그 아래에 있는건
+           인라인 요소들도, 너비, 높이 가질 수 있다. 
+        */
+        .sign_box form .form_group{
+            display: flex; /* ★★★ */
+            justify-content: center;  /* ★★★ */
+            margin-bottom: 10px;  
+        }
+        /* label 인라인 태그에 부모요소인 form_group에 display: flex를
+           지정하므로, 인라인 요소도 너비, 높이를 가질 수 있게 변함을 주의 하자. 
+        */
+        .form_group label{
+            width: 110px;
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+        /* input CSS */
+        input{
+            border: 1px solid rgb(185, 184, 184);
+            border-radius: 5px;
+            padding: 5px;
+            width: 250px;
+            margin-bottom: 10px;
+        }
+        /* 버튼 CSS */
+        .submit_btn{
+            width: 100%;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        /* 버튼 호버 CSS */
+        .submit_btn:hover{
+            background-color: green;
+        }
+        /* placeholder CSS */
+        input::placeholder{
+            font-size: 0.7rem;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sign_box">
+        <!-- form태그 이용 -->
+        <form action="#" method="get">
+            <!-- div 4개 그룹으로 그룹화하기 -->
+            <div class="form_group">
+                <label for = "name">이름</label>     
+                <input type="text" id = "name" placeholder="홍길동" />
+            </div>
+            <div class="form_group">
+                <label for = "email">이메일</label> 
+                <input type="email" id= "email" placeholder="example@gmail.com" />
+            </div>
+            <div class="form_group">
+                <label for = "pw">비밀번호</label> 
+                <input type="password" id = "pw"/>
+            </div>
+            <div class="form_group">
+                <label for = "pwchk">비밀번호 확인</label> 
+                <input type="password" id="pwchk"/>
+            </div>
+            <!-- submit 버튼 -->
+            <button type="submit" class="submit_btn">회원가입</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제05</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            /* height: 100%; */
+        }
+        body{
+            font-family: sans-serif;
+            font-size: 12px;
+            padding: 20px;
+            height: 100%;
+        }
+        .group{
+            height: 100%;
+            margin: 0 auto;
+        }
+        /* item CSS */
+        .item{
+            width:180px;
+            margin-right: 15px; 
+        }
+        /* image_group CSS */
+        .image_group{
+            position: relative;
+            
+        }
+        
+        /* 배지 CSS */
+        .image_group .badge{
+            position: absolute;
+            /* float: right; */
+            bottom: 8%;
+            right: 4%;
+            background-color: black;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            padding:5px;
+            text-align: center;
+            z-index: 3;
+            opacity: 0.4;
+        }
+        .badge_pick{
+            position: absolute;
+            bottom: 12%;
+            right: 9%;
+            opacity: 100;
+            z-index: 100;
+        }
+        .pick{
+            color: white;
+            font-weight: bolder;
+        }
+        .group{
+            display: flex;
+            /* justify-content: center; */
+        }
+        /* details 전체 CSS */
+        .details div{
+            margin-bottom: 3px;
+        }
+        .details .last_line{
+            display: flex;
+            justify-content: left;
+        }
+        /*  */
+        /* 원래가격 CSS */
+        .original_price{
+            color: gray;
+        }
+        /* 할인 CSS */
+        .discount{
+            color: red;
+            font-weight: bold;
+            width: 40px;
+            font-size: 14px;
+        }
+        /* 최종가격 CSS */
+        .price{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .pick::before{
+             content: '©';
+
+        }
+    </style>
+</head>
+<body>
+    <div class="group">
+        <div class="item item1">
+            <div class="image_group">
+                <img src="/images/sale01.jpg" alt="한우선물세트" width="180px"; height="180px";/>
+                <div class="badge"></div>
+                <div class="badge_pick">    
+                    <span class = "pick"></span>
+                </div>
+            </div>
+            <div class="details">
+                <div class="product_name">++1등급 마장동 명품 투쁠 한우 선물 세트 소고기 구이용 설 명절</div>
+                <div class="original_price"><del>54,500원</del></div>
+                <div class="last_line">
+                    <span class="discount">18%</span>
+                    <span class="price">44,300원</span>
+                </div>
+            </div>
+        </div>
+        <div class="item item2">
+            <div class="image_group">
+                <img src="/images/sale02.jpg" alt="한우선물세트02" width="180px"; height="180px";/>
+                <div class="badge"></div>
+                <div class="badge_pick">    
+                    <span class = "pick"></span>
+                </div>
+            </div>
+            <div class="details">
+                <div class="product_name">++1등급 마장동 명품 투쁠 한우 선물 세트 소고기 구이용 설 명절</div>
+                <div class="original_price"><del>54,500원</del></div>
+                <div class="last_line">
+                    <span class="discount">18%</span>
+                    <span class="price">44,300원</span>
+                </div>
+            </div>
+        </div>
+        <div class="item item3">
+            <div class="image_group">
+                <img src="/images/sale03.jpg" alt="한우선물세트03" width="180px"; height="180px";/>
+                <div class="badge"></div>
+                <div class="badge_pick">    
+                    <span class = "pick"></span>
+                </div>
+            </div>
+            <div class="details">
+                <div class="product_name">++1등급 마장동 명품 투쁠 한우 선물 세트 소고기 구이용 설 명절</div>
+                <div class="original_price"><del>54,500원</del></div>
+                <div class="last_line">
+                    <span class="discount">18%</span>
+                    <span class="price">44,300원</span>
+                </div>
+            </div>
+        </div>
+        <div class="item item4">
+            <div class="image_group">
+                <img src="/images/sale04.jpg" alt="한우선물세트04" width="180px"; height="180px";/>
+                <div class="badge"></div>
+                <div class="badge_pick">    
+                    <span class = "pick"></span>
+                </div>
+            </div>
+            <div class="details">
+                <div class="product_name">++1등급 마장동 명품 투쁠 한우 선물 세트 소고기 구이용 설 명절</div>
+                <div class="original_price"><del>54,500원</del></div>
+                <div class="last_line">
+                    <span class="discount">18%</span>
+                    <span class="price">44,300원</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
