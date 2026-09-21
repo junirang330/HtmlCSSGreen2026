@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>member</title>
+    <link rel="stylesheet" href="member.css" >
+</head>
+<body>
+    <section class="membership">
+        <h2>OOZY COFFEE</h2>
+        <h4>회원가입</h4>
+        <h5>가입하면 <strong>10만원 쿠폰팩</strong>을 바로 드려요!</h5>
+        <form action="#" method="get">
+            <div class="group group1">
+                <label for="email">이메일<span class="must">*</span></label>
+                <input type="email" id="email" placeholder="이메일을 입력해 주세요"/>
+                <button class = "duplicate_btn">중복확인</button>
+            </div>
+            <div class="group group2">
+                <label for="pw">비밀번호<span class="must">*</span></label>
+                <input class="pw_input" type="password" id="pw" placeholder="비밀번호를 입력해 주세요"/>
+                <p>8~20자, 영문·숫자·특수문자 중 2가지 이상 조합</p>
+            </div>
+            <div class="group group3">
+                <label for="pwchk">비밀번호 확인<span class="must">*</span></label>
+                <input type="password" id="pwchk" placeholder="비밀번호를 한 번 더 입력해 주세요"/>
+            </div>
+            <div class="group group4">
+                <label for="name">이름<span class="must">*</span></label>
+                <input type="text" id="name" placeholder="이름을 입력해 주세요"/>
+            </div>
+            <div class="group group5">
+                <label for="phone">휴대폰 번호<span class="must">*</span></label>
+                <input type="tel" id="phone" placeholder="010-0000-0000"/>
+                <button class = "certification_btn">인증번호 받기</button>
+            </div>
+            <div class="group group6">
+                <label for="birthday">생년월일<span class="choice">(선택)</span></label>
+                <input type="date" id="birthday"/>
+            </div>
+            <div class="group group7">
+                <label>성별<span class="choice">(선택)</span></label>
+                <div class="gender_box">
+                    <input type="radio" id="female" name = "gender" value = "female" />
+                    <label for="female">여성</label>
+                    <input type="radio" id="male" name = "gender" value = "male" />
+                    <label for="male">남성</label>
+                    <input type="radio" id="none" name = "gender" value = "none" />
+                    <label for="none">선택 안 함</label>
+                </div>
+            </div>
+            
+            <!-- 약관 동의 부분 -->
+            <div class="agreement">
+                <h3>약관 동의</h3>
+                <div class="box">
+                    <input type="checkbox" id="all_agree"/>
+                    <label class="all_agree" for ="all_agree">전체 동의하기</label>
+                </div>
+                <hr/>
+                <div class="box">
+                    <input type="checkbox" id="agree1"/>
+                    <label for ="agree1">
+                        <span class ="must2">[필수] </span>이용약관동의
+                    </label>
+                    <a href = "#">보기</a>
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="agree2"/>
+                    <label for ="agree2">
+                        <span class ="must2">[필수] </span>개인정보 수집 및 이용 동의
+                    </label>
+                    <a href = "#">보기</a>
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="agree3"/>
+                    <label for ="agree3">
+                        <span class ="must2">[필수] </span>만 14세 이상입니다
+                    </label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="agree4"/>
+                    <label for ="agree4">
+                        <span class ="choice2">[선택] </span>이벤트·혜택 정보 수신 동의
+                    </label>
+                    <a href = "#">보기</a>
+                </div>
+            </div>
+
+            <!-- 가입하기 버튼 -->
+            <button type="submit">가입하기</button>
+        </form>
+
+        <hr/>
+        <!-- 이미 회원인 경우 -->
+        <h5>이미 회원이신가요?</h5>
+        <a class = "login" href="login.html">로그인</a>
+    </section>
+</body>
+</html>

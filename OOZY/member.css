@@ -1,0 +1,266 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    min-width: 1200px;
+}
+/* 전체 CSS */
+.membership{
+    margin: 130px auto;
+    border: 1px solid #22352a;
+    box-shadow: 7px 7px 20px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    width: 530px;
+    padding: 25px;
+    /* text-align: center; */
+}
+/* 제목 및 글자 CSS */
+
+h2{
+    color: #22352a;
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h5{
+    color: gray;
+    margin-bottom: 30px;
+    text-align: center;
+}
+strong{
+    color: black;
+}
+
+form{
+    width: 470px;
+}
+/* 폼에서 그룹별로 CSS */
+.group{
+    margin-bottom: 15px;
+}
+/* 라벨 block으로 지정 */
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+p{
+    font-size: 13px;
+    color: gray;
+}
+/* input box들 너비 100%로 주기 */
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    height: 40px;
+    /* margin-bottom: 15px; */
+    vertical-align: center;
+
+}
+input.pw_input{
+    margin-bottom: 5px;
+}
+
+/* 이메일 input box CSS */
+input[type="email"]{
+    width: 385px;
+}
+
+/* 중복확인 CSS */
+button.duplicate_btn{
+    border: 1px solid #14563a;
+    border-radius: 7px;
+    background-color: white;
+    width: 80px;
+    cursor: pointer;
+    padding: 10px;
+    height: 40px;
+    vertical-align: bottom;
+}
+
+/* 휴대폰 input box CSS */
+input[type="tel"]{
+    width: 345px;
+}
+
+/* 인증번호 받기 CSS */
+button.certification_btn{
+    border: 1px solid #14563a;
+    border-radius: 7px;
+    background-color: white;
+    width: 120px;
+    cursor: pointer;
+    padding: 10px;
+    height: 40px;
+    vertical-align: bottom;
+}
+
+.duplicate_btn:hover{
+    background-color: rgb(209, 207, 207);
+}
+
+/* 성별 radio CSS */
+.gender_box{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+
+}
+
+input[type="radio"]{
+    width: 15px;
+    margin-right: 10px;
+    /* align-items: ; */
+    /* flex: 1; */
+    /* border: 1px solid white; */
+    /* margin: 0 40px 0; */
+}
+
+.gender_box label{
+    /* line-height: 0px; */
+    margin-right: 30px;
+    display: inline-block;
+    height: 10px;
+    /* vertical-align: bottom; */
+    /* align-items: center; */
+    /* line-height: 100px; */
+}
+
+.agreement{
+    /* align-content: center; */
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 20px;
+    /* align-content: center; */
+}
+
+/* .agreement .box{
+    vertical-align: center;
+    align-items: center;
+    line-height:
+} */
+/* 약관동의 부분 라벨은 인라인으로 지정 */
+.agreement label{
+    
+    display: inline-block;
+    vertical-align: center;
+}
+
+
+/* 약관 동의 제목 CSS */
+.agreement h3{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+/* 약관 동의 체크박스 CSS */
+/* agreement의 체크박스 */
+.agreement input[type="checkbox"]{
+    width: 15px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+
+
+/* 가상 CSS */
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus{
+  outline: none;
+  border: 1px solid #14563a;
+}
+
+/* span처리 */
+span.must{
+    color: red;
+}
+span.choice{
+    color: gray;
+    font-size: 13px;
+}
+span.must2{
+    font-weight: bold;
+    color: #14563a;
+}
+span.choice2{
+    color: gray;
+    /* font-size: 13px; */
+}
+
+/* 보기 CSS */
+.agreement a{
+    color: black;
+    display: inline-block;
+    padding-top:10px;
+    /* height: 20px; */
+    /* margin-left: 40px; */
+    float: right;
+    font-size: 13px;
+}
+
+/* hr CSS */
+hr{
+    border: none;
+    border-top: 1px solid lightgray;
+    margin: 10px 0;
+}
+
+/* 가입하기 버튼 CSS */
+button[type="submit"]{
+    width: 100%;
+    color: white;
+    background-color: #14563a;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+/* 호버 */
+button[type="submit"]:hover{
+    background-color: #05442a;
+}
+
+/* 로그인 버튼 CSS */
+.login{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 470px;
+    padding: 10px;
+}
+.login:hover{
+    background-color: rgb(228, 224, 224);
+}
+/* 전체동의하기 굵게 CSS */
+label.all_agree{
+    font-weight: bold;
+}
+/* 폼 라벨 굴게 CSS */
+form label{
+    font-weight: bold;
+}

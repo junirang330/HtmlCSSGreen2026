@@ -1,0 +1,197 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+    /* padding: 40px; */
+    min-width: 1200px;
+}
+/* 섹션 전체 CSS */
+.login{
+    /* 중앙에 오도록 */
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 130px auto;
+    border: 1px solid #22352a;
+    width: 530px;
+    padding: 25px;
+    /* line-height: 2.5; */
+    border-radius: 8px;
+    box-shadow: 7px 7px 20px rgba(0,0,0,0.2);
+
+}
+/* 제목 CSS */
+h2{
+    color:  #22352a;
+    text-align: center;
+    margin: 40px 0;
+    /* margin-bottom: 50px; */
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+/* 폼 CSS */
+form{
+    /* border: 1px solid blue; */
+    /* display: flex; */
+    width: 470px;
+
+}
+input[type="email"],
+input[type="password"]{
+    width: 480px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 18px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+/* 로그인 버튼 CSS */
+button[type="submit"]{
+    width: 480px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: #14563a;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* 로그인 버튼 호버 CSS */
+button[type="submit"]:hover{
+    /* color:  */
+    background-color: #22352a;
+}
+/* placeholder CSS */
+input[type="email"]::placeholder,
+input[type="password"]::placeholder{
+    padding: 5px;
+    color: gray;
+    font-size: 15px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus{
+  outline: none;
+  border: 1px solid #14563a;
+}
+/* 로그인 상태 유지 라인 CSS */
+.login_addition{
+    display: flex;
+    align-items: center;
+    /* display: inline-block; */
+    margin: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+}
+.group input[type="checkbox"]{
+    /* float: left; */
+    margin-right: 10px;
+    /* vertical-align: center; */
+    /* line-height: 5px; */
+    /* align-items: center; */
+}
+label.retain{
+    /* float: left; */
+    padding-right: 80px;
+    vertical-align: center;
+}
+.login_addition a{
+    /* display: inline-block; */
+    color: black;
+    text-decoration: none;
+    float: right;
+}
+
+/* 간편로그인 CSS */
+.easy_login{
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 18px;
+    /* margin-bottom: 30px; */
+
+}
+
+/* UL CSS */
+ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+
+ul li{
+    /* border: 1px solid red; */
+    width: 80px;
+    height: 80px;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul li img{
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+/* ul li li:hover{
+    border: 3px solid green;
+} */
+/* 배경색 넣는 단계 */
+li.naver{
+    background-color: rgb(95, 216, 95);
+}
+li.kakao{
+    background-color: yellow;
+}
+
+li.face{
+    background-color: blue;
+}
+li.apple{
+    background-color: black;
+}
+
+
+/* 회원가입 버튼 CSS */
+.join_membership{
+    display: flex;
+}
+.join_membership a{
+    margin: 20px 0 20px;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px; 
+    border: 1px solid rgb(75, 74, 74);
+    background-color: white;
+    cursor: pointer;
+    font-weight: 800;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    
+    
+}
+/* 버튼 호버 CSS */
+.join_membership button:hover{
+    background-color: rgb(226, 224, 224);
+}
+
+/* 가장 아래 구문 CSS */
+.bottom{
+    text-align: center;
+}
