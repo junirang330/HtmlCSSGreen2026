@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kmong_main</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- head 부분 html 작성 -->
+    <header id="header">
+        <!-- inner 부모 클래스 -->
+        <div class="header_top">
+            <!-- 왼쪽 상단 브래드 + 검색창 -->
+            <div class="logo">
+                <img src="images/kmong.svg" alt ="크몽브랜드"  width="170px";/>
+                <!-- 검색창 부분 -->
+                <div class="searchbox">
+                    <input class="search" type="text" placeholder="어떤 전문가가 필요하세요?"/>
+                    <img class="glasses" src="images/돋보기.svg" alt = "돋보기-검색" />
+                </div>
+            </div>
+            
+            <!-- 우측 상단 부분 -->
+            <div class="menu_tab1">
+                <ul class="gnb">
+                    <li><a href = "#" >엔터프라이즈<span class="for_biz">기업용</span></a></li>
+                    <li><a href = "#" >전문가 등록</a></li>
+                    <li><a href = "#" >로그인</a></li>
+                    <li><a class = "join_membership" href = "#" >회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class="header_bottom">
+            <!-- nav 부분 -->
+            <ul class = "menu1">
+                <li class="menu_img1">
+                    <img src ="images/집.png" alt="house" width="20px";/>
+                    <a href="#">업종별</a></li>
+                <li class="menu_img2">
+                    <img src="images/4각형 4개.svg" alt="cate" width="20px"/>
+                    <a href="#">전체</a>
+                    <img src="images/아래 화살표.svg" alt="화살표" width="20px"/>
+                </li>
+                <li><a href="#">디자인</a></li>
+                <li><a href="#">마케팅</a></li>
+                <li><a href="#">IT·프로그래밍</a></li>
+                <li><a href="#">영상·사진·음향</a></li>
+                <li><a href="#">창업·사업</a></li>
+                <li><a href="#">AI 서비스</a></li>
+            </ul>
+            <ul class="menu2">
+                <li><a href="#">전차책·템플릿</a></li>
+                <li><a href="#">포트폴리오</a></li>
+                <li><a href="#">크몽 Biz</a></li>
+            </ul>
+        </nav> 
+        
+    </header>
+    
+    <hr class="comm hr1"/>
+    <!-- 섹션 부분 - 총3개 -->
+    <section id="section">
+        <!-- 쇼핑몰 사장님 부분 -->
+        <div class="section section1">
+            <h2><span class="color1">쇼핑몰 사장님</span>이<br/>많이 찾아요</h2>
+            <div class="group group1">
+                <a class="image_top" href="#">상세페이지<span class="plus">+</span></a>
+                <img class="product_img" src="images/쇼핑몰1.webp" alt="쇼핑몰1"  />
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">잘팔리는 상세페이지제작 제품촬영/기획/고퀄리티 다지안</p>
+                <p class = "star">4.9 <span class="review">300</span></p>
+                <p class="price">55,000원~</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="성공디자인" />
+                    <p>성공디자인</p>
+                </div>
+            </div>
+            <div class="group group2">
+                <a class="image_top" href="#">제품 사진 촬영<span class="plus">+</span></a>
+                <img class="product_img" src="images/쇼핑몰2.webp" alt="쇼핑몰2" />
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">제품사진 제품촬영 누끼촬영 영상촬영 한번에 해결</p>
+                <p class = "star">4.9 <span class="review">778</span></p>
+                <p class="price">5,000원~</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="Jerom" />
+                    <p>Jerom</p>
+                </div>
+            </div>
+            <div class="group group3">
+                <a class="image_top" href="#">스토어 활성화<span class="plus">+</span></a>
+                <img class="product_img" src="images/쇼핑몰3.webp" alt="쇼핑몰3" />
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">#실행사운영-프리미엄 리뷰 구매평/체험단 마케팅</p>
+                <p class = "star">4.9 <span class="review">387</span></p>
+                <p class="price">6,000원~</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="플랜더" />
+                    <p>플랜더</p>
+                </div>
+            </div>
+            <div class="group group4">
+                <a class="image_top" href="#">검색 최적화<span class="plus">+</span></a>
+                <img class="product_img" src="images/쇼핑몰4.webp" alt="쇼핑몰4"/>
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">카페 최적화노출 작업 서비스</p>
+                <p class = "star">4.9 <span class="review">82</span></p>
+                <p class="price">50,000원~</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="나이스마케팅" />
+                    <p>나이스마케팅</p>
+                </div>
+            </div>
+        </div>
+        <!-- 매장운영 부분 -->
+        <div class="section section2">
+            <h2><span class="color2">매장운영</span>할 때<br/>많이 찾아요</h2>
+            <div class="group group5">
+                <a class="image_top" href="#">로고 디자인<span class="plus">+</span></a>
+                <img class="product_img" src="images/매장운영1.webp" alt="매장운영1" />
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">13년만족1위｜프리미엄 로고제작｜로고 브랜딩｜CI BI</p>
+                <p class = "star">4.9 <span class="review">3,646</span></p>
+                <p class="price">130,000원~</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="지구컴즈" />
+                    <p>지구컴즈</p>
+                </div>
+            </div>
+            <div class="group group6">
+                <a class="image_top" href="#">음식 사진 촬영<span class="plus">+</span></a>
+                <img class="product_img" src="images/매장운영2.webp" alt="매장운영2" />
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">음식사진촬영/배달앱/메뉴사진/음식모음/메뉴판/배너/출장</p>
+                <p class = "star">4.9 <span class="review">126</span></p>
+                <p class="price">270,000원~</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="반브로프로덕션"  />
+                    <p>반브로프로덕션</p>
+                </div>
+            </div>
+            <div class="group group7">
+                <a class="image_top" href="#">전단지<span class="plus">+</span></a>
+                <img class="product_img" src="images/매장운영3.webp" alt="매장운영3" />
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">브로슈어/리플렛/포스터/카탈로그/각종 인쇄물 디자인</p>
+                <p class = "star">4.9 <span class="review">2,006</span></p>
+                <p class="price">44,000원</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="올댓디자인"/>
+                    <p>올댓디자인</p>
+                </div>
+            </div>
+            <div class="group group8">
+                <a class="image_top" href="#">지도 최적화노출<span class="plus">+</span></a>
+                <img class="product_img" src="images/매장운영4.webp" alt="매장운영4"/>
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">지도 리워드트래픽 저장하기 지도최적화 지도 최적화 노출</p>
+                <p class = "star">4.9 <span class="review">1,490</span></p>
+                <p class="price">10,000원~</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="지프라마케팅" />
+                    <p>지프라마케팅</p>
+                </div>
+            </div>
+        </div>
+        <!-- 예비창업가 부분 -->
+        <div class="section section3">
+            <h2><span class="color3">예비창업가</span>들이<br/>많이 찾아요</h2>
+            <div class="group group9">
+                <a  class="image_top" href="#">명함 디자인<span class="plus">+</span></a>
+                <img class="product_img" src="images/예비창업가1.webp" alt="예비창업가1" />
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">매출을 만드는 명함디자인｜첫인상으로 끝내는 로고제작까지</p>
+                <p class = "star">4.9 <span class="review">1,052</span></p>
+                <p class="price">15,000원</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="바오3"/>
+                    <p>바오3</p>
+                </div>
+            </div>
+            <div class="group group10">
+                <a  class="image_top" href="#">홈페이지 개발<span class="plus">+</span></a>
+                <img class="product_img" src="images/예비창업가2.webp" alt="예비창업가2"/>
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">가게 홈페이지 제작 19만원부터 반응형</p>
+                <p class = "star">5.0 <span class="review">2</span></p>
+                <p class="price">190,000원</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="Intframe"/>
+                    <p>Intframe</p>
+                </div>
+            </div>
+            <div class="group group11">
+                <a class="image_top" href="#">앱 개발<span class="plus">+</span></a>
+                <img class="product_img" src="images/예비창업가3.webp" alt="예비창업가3"/>
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">안드로이드 앱/IOS 앱 100만원에 개발 7일완료</p>
+                <p class = "star">5.0 <span class="review">63</span></p>
+                <p class="price">1,000,000원~</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="Youngsol" />
+                    <p>Youngsol</p>
+                </div>
+            </div>
+            <div class="group group12">
+                <a class="image_top" href="#">사업계획서 컨설팅<span class="plus">+</span></a>
+                <img class="product_img" src="images/예비창업가4.webp" alt="예비창업가4"/>
+                <!-- prime 배지부분 -->
+                <div class="badge">
+                    <p>prime</p>
+                </div>
+                <p class="name">작성하신 사업계획서 첨삭,컨설팅해 드립니다.</p>
+                <p class = "star">4.8 <span class="review">79</span></p>
+                <p class="price">10,000원</p>
+                <div class="small_brand">
+                    <img src="images/유투브.svg" alt="창진원중기부평가위원"/>
+                    <p>창진원중기부평가위원</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+    
+    <hr class="comm hr2"/>
+    <!-- footer부분 -->
+    <footer id="footer">
+        <!-- inner 클래스 -->
+        <div class="footer_top">
+            <!-- 하단에서 top 부분 왼쪽 -->
+            <div class="footer_group group1">
+                <ul class="footer_top_left">
+                    <li class = "kmong_brand">
+                        <img src="images/kmong.svg" alt ="크몽브랜드" />
+                    </li>
+                    <li class ="security security1">
+                        <img src="images/보안1.svg" alt = "보안1 이미지"/>
+                        <p>
+                            온라인 플랫폼 서비스 운영(크몽)<br/>
+                            (심사받지 않은 물리적 인프라 제외)<br/>
+                            2025.01.15 ~ 2028.0114
+                        </p> 
+                    </li>
+                    <li class ="security security2">
+                        <img src="images/보안2.svg" alt = "보안2 이미지" />
+                        <p>
+                            ISO/IEC 27001/27017<br/>
+                            정보보호 관리체계 및 클라우드보안<br/>
+                            관리체계 국제 표준 검증
+                        </p>
+                    </li>
+                </ul>
+            </div>    
+
+            <!-- 하단에서 top 부분에서 우측 -->
+            <div class="footer_group group2">
+                <ul class="footer_top_right">
+                    <li>
+                        <div class="app">
+                            <a href="#">
+                                <img class="app1" src="images/구글플에이스토어.svg" alt="플레이스토어"/>
+                                <p>Google Play</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="app">
+                            <a href="#">
+                                <img class="app1" src="images/애플.svg" alt="앱스토어"/>
+                                <p>App Store</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="app">
+                            <a href="#">
+                                <img class="app2" src="images/인스타.svg" alt="인스타"/>
+                            </a>
+                    </li>
+                    <li>
+                        <div class="app">
+                            <a href="#">
+                                <img class="app2" src="images/유투브.svg" alt="유투브" />
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer_bottom">
+            <!-- 하단에서 bottom부분 -->
+            <div class="footer_group group3">
+                <div class="company">
+                    <p>(주)크몽｜서울시 서초구 사임당로 157,3층｜대표:박현호,김태현｜사업자등록번호:613-81-65278 <span class="bold"><u>사업자 정보확인</u></span></p>
+                    <p>통신판매업신고:2018-서울서초-2134｜유료직업소개사업등록번호:제2021-3210195-14-5-00035호｜고객센터 : 1544-6254｜호스팅 사업자: Amazon Web Service(AWS)｜1:1 문의하기｜help@kmong.com</p>
+                    <p>
+                        (주)크몽은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매회원에게 있습니다.
+                    </p>
+                    <p>
+                        (주)크몽 사이트의 상품/전문가/이벤트 정보, 디자인 및 화면의 구성, UI 등의 무단복제, 배포, 방송 또는 전송, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등 관련법령에 의하여 엄격히 금지됩니다. [안내 보기]
+                    </p>
+                    <p>   
+                        (주)크몽은 선불전자지급수단에 대해 지급보증보험에 가입하여 안전하게 보호하고 있습니다. [가입 사실 확인]
+                    </p>
+                    <p class="copyright">
+                        Copyright &copy; 2026 kmong Inc. All rights reserved.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+</body>
+</html>

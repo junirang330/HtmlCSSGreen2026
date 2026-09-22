@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <!-- 인스타그램 그라데이션 정의 -->
+    <radialGradient id="insta-grad" cx="30%" cy="100%" r="110%">
+      <stop offset="0%" stop-color="#ffd600"/>
+      <stop offset="25%" stop-color="#ff7a00"/>
+      <stop offset="50%" stop-color="#ff0069"/>
+      <stop offset="75%" stop-color="#d300c5"/>
+      <stop offset="100%" stop-color="#7638fa"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- 원형 배경 -->
+  <circle cx="50" cy="50" r="50" fill="url(#insta-grad)"/>
+  
+  <!-- 카메라 바깥 상자 -->
+  <rect x="25" y="25" width="50" height="50" rx="14" fill="none" stroke="#ffffff" stroke-width="5"/>
+  
+  <!-- 카메라 렌즈 원 -->
+  <circle cx="50" cy="50" r="12" fill="none" stroke="#ffffff" stroke-width="5"/>
+  
+  <!-- 카메라 플래시 점 -->
+  <circle cx="63" cy="37" r="3.5" fill="#ffffff"/>
+</svg>

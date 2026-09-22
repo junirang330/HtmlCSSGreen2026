@@ -1,0 +1,404 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    /* width: 1200px; */
+}
+
+/* ul에 있는 리스트 스타일 공통적으로 제거 */
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header 부분 -------------------------------------------------------------------------------- */
+/* 헤드의 inner flex주기 */
+#header{
+    min-width: 1200px;  /* 너비 최소 1200으로  */
+    margin: 20px auto;
+}
+#header .header_top{
+    position: relative;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 40px;
+    /* align-items: center; */
+}
+
+/* 검색창 부분 CSS */
+#header .header_top .logo{
+    display: flex;
+    margin-left: 70px;
+    width: 700px;
+}
+
+/* 검색창 부문에서 input CSS */
+#header .header_top .logo .searchbox{
+    width: 500px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    padding: 12px;
+    
+}
+
+#header .header_top .logo .search{  /* 검색창 CSS */
+    padding-left: 12px;
+    border: none;
+    /* width: 500px */
+}
+
+#header .header_top .logo .search::placeholder{
+   vertical-align: center;
+    
+}
+
+#header .header_top .logo .search:focus{
+    outline: none;
+    /* border: 1px solid gray; */
+}
+
+/* 돋보기 이미지 CSS */
+#header .header_top .logo .searchbox .glasses{
+    float: right;
+}
+
+
+
+/* header top 에서 우측상단 CSS ------------------*/
+/* header에서 nave 중 menu_tab1의 ul CSS */
+#header .header_top .menu_tab1 .gnb{
+    display: flex;
+    /* float: right; */
+    width: 500px;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    
+}
+
+#header .header_top .menu_tab1 .gnb li {
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+#header .header_top .menu_tab1 .gnb span.for_biz{
+    background-color: rgb(192, 216, 230);
+    color: rgb(15, 73, 139);
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#header .header_top .menu_tab1 .gnb li .join_membership{
+    color: white;
+    background-color: black;
+    padding: 8px 12PX;
+    border: none;
+    border-radius: 8px;
+}
+
+
+/* header_bottom  부분 --------------------------------- */
+#header .header_bottom {
+    display: flex;
+    /* position: relative; */
+    justify-content: space-between;
+    margin-right: 60px;
+    /* margin: 0 70px; */
+    
+    /* float: right; */
+}
+
+/* nav 중 메뉴탭2 CSS */
+/* header에서 nave 중 menu_tab2의 ul menu1 CSS */
+#header .header_bottom .menu1{
+    display: flex;
+    width: 900px;
+    font-size: 20px;
+    margin-left: 70px;
+    justify-content: space-between;
+    font-weight: bold;
+
+}
+
+/* header에서 nave 중 menu_tab2의 ul menu2 CSS */
+#header .header_bottom .menu2{
+    display: flex;
+    width: 400px;
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+    justify-content: space-evenly;
+    /* position: absolute; */
+    /* right: 0; */
+    /* margin: 30px; */
+}
+
+li.menu_img1{
+    display: flex;
+    align-items: center;
+}
+li.menu_img2{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* section 부분 -----------------------------------------------------------------*/
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: space-between;
+    margin: 30PX auto;
+
+}
+.group{
+    width: 180px;
+    /* display: flex; */
+    line-height: 1.5;
+}
+
+/* 이미지 위에 있는 버튼 */
+.group a.image_top{
+    background-color: rgb(240, 239, 239);
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid rgb(189, 188, 188);
+    border-radius: 7px;
+    width: 220px;
+    margin-bottom: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+.group a.image_top:hover{
+    background-color: lightgray;
+    border: 2px solid rgb(94, 92, 92);
+}
+
+span.plus{
+    float: right;
+    /* font-weight: 900; */
+    font-size: 18px;
+}
+.name{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+p.star{
+    margin-right: 20px;
+    font-size: 13px;
+}
+p.star::before{
+    content: "⭐";
+}
+
+span.review{
+    color: rgb(173, 172, 172);
+    font-size: 13px
+}
+span.review::before{
+    content: "(";
+}
+span.review::after{
+    content: ")";
+}
+
+p.price{
+    margin-bottom: 10px;
+}
+
+.small_brand{
+    display: flex;
+}
+.small_brand p{
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* 이미지 사이즈 부분 */
+.section .group img.product_img{
+    width: 220px;
+    height: 180px;
+}
+
+.small_brand img{
+    width: 23px;
+    height: 23px;
+}
+
+li.kmon_brand img{
+    width: 130px;
+}
+li.security1 img{
+    width: 40px;
+}
+li.security2 img{
+    width: 150px;
+}
+.app1{
+    width: 18px;
+}
+.app2{
+    width: 23px;
+}
+
+
+/* footer 부분 ---------------------------------------------------------------------------------- */
+/* footer에서 top부분 */
+#footer{
+    margin: 0 70px;
+}
+#footer div.footer_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer div.footer_top{
+    margin-bottom: 20px;
+}
+
+#footer .footer_top .footer_group{
+    display: flex;
+}
+
+/* footer에서 top 부분 왼쪽 부분 */
+ul.footer_top_left{
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+ul.footer_top_left li.kmong_brand{
+    align-content: center;
+}
+
+li.security img{
+    margin-right: 10px;
+}
+li.security1{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+li.security2{
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+ul.footer_top_left li p{
+    font-size: 9px;
+    color: gray;
+}
+
+
+/* footer 에서 top부분에서 우측부분 */
+ul.footer_top_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+ul.footer_top_right li div.app a{
+    display:flex;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding:5px;
+    align-items: center;
+}
+ul.footer_top_right li div.app img{
+    margin-right: 5px;
+}
+ul.footer_top_right li div.app p{
+    font-size: 10px;
+    color: rgb(68, 68, 68);
+
+}
+
+
+/* footer에서 bottom 부분 */
+.company{
+    /* display: flex; */
+}
+.company p{
+    font-size: 10px;
+    color: gray;
+    margin-bottom: 4px;
+}
+.company p.copyright{
+    margin-top: 18px;
+}
+.company span.bold{
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+    margin-left:5px;
+}
+
+
+/* 기타작업--------------------------------------------------------------------------------- */
+/* span color 부분 CSS */
+span.color1{
+    background-color: #EBF9E7;
+}
+span.color2{
+    background-color: #FFD5F5;
+}
+span.color3{
+    background-color: #D5EBFF;
+}
+
+
+/* prime CSS */
+.badge{
+    color: white;
+    background-color: black;
+    width: 60px;
+    text-align: center;
+}
+.group3 .badge,
+.group4 .badge,
+.group5 .badge,
+.group8 .badge,
+.group9 .badge,
+.group10 .badge,
+.group11 .badge,
+.group12 .badge{
+    display: none;
+}
+/* hr 부분 */
+hr.comm{
+    border: none;
+    border-top: 1px solid rgb(192, 192, 192);
+    /* margin: 50px 0; */
+    /* display: float; */
+    /* margin-bottom: 50px; */
+
+}
+.hr1{
+    margin-bottom: 80px;
+}
+.hr2{
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
