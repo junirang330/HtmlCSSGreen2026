@@ -1,0 +1,392 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    min-width: 1200px;
+}
+/* inner공통 (푸터/헤더) */
+.inner{
+    width: 1200px;
+    margin: 30px auto;
+}
+/* ul 공통 css */
+ul{
+    list-style: none;
+}
+/* a 공통 */
+a{
+    color: black;
+    text-decoration: none;
+}
+/* ------------------------------------------------------------------ */
+/* 헤더 */
+header{
+    border-bottom: 2px solid black;
+}
+/* 헤더 상단 */
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 헤더 상단의 왼쪽 */
+.header_top_left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    width: 800px;
+}
+/* 검색창 */
+.searchBox{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    border: 1px solid gray;
+    align-items: center;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.searchBox:hover{
+    border: 2px solid green;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+.search{
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.search::placeholder{
+    font-size: 15px;
+}
+.search:focus{
+    outline: none;
+}
+/* 검색창의 우측 */
+.searchBox_right{
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+}
+/* ai검색 버튼 */
+.ai_search{
+    text-align: center;
+    color: white;
+    background-color: rgb(193, 39, 193);
+    padding: 5px 10px;
+    font-size: 12px;
+    width: 70px;
+    border-radius: 20px;
+}
+
+/* 헤더 상단의 우측 */
+.user_nav{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;    
+    align-items: center;
+}
+.join_membership{
+    color: white;
+    background-color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+/* 기업용 배지 */
+.badge_biz{
+    background-color: rgb(178, 217, 255);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+/* 헤더 하단 */
+.header_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+/* nav_list (카테고리) */
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    align-items: center;
+}
+.nav_industry,
+.nav_all{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.nav_industry img{
+    width: 20px;
+}
+.nav_all img{
+    width: 20px;
+}
+.nav_list li a{
+    display: flex;
+    align-items: center;
+}
+.nav_list li img{
+    margin-right: 10px;
+}
+
+
+
+/* nav_etc (부가서비스) */
+.nav_etc{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    align-items: center;
+    width: 400px;
+}
+
+/* 자바스크립트 연동 css(마우스 효과) */
+.user_nav li a{
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+}
+.user_nav li a.active{
+    border-bottom-color: orange;
+}
+.nav_list li a{
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+}
+.nav_list li a.active{
+    border-bottom-color: pink;
+}
+.nav_etc li a{
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+}
+.nav_etc li a.active{
+    border-bottom-color: dodgerblue;
+}
+/* ------------------------------------------------------------------ */
+/* 섹션 */
+section{
+    width: 1200px;
+    margin: 60px auto;
+}
+/* 행 전체 css */
+.recommend_row{
+    display: flex;
+    justify-content: space-between;
+}
+.row_title{
+    width: 240px;
+}
+
+/* 하이라이트 색상 */
+.highlight1{
+    background-color: rgb(243, 243, 196);
+}
+.highlight2{
+    background-color: rgb(203, 255, 213);
+}
+.highlight3{
+    background-color: rgb(255, 232, 205);
+}
+
+/* 카드리스트(카드 4개) */
+.card_list{
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+/* 카드아이템 */
+.card_item{
+    display: flex;
+    align-content: flex-start;
+    justify-content: left;
+    flex-wrap: wrap;  /* ★★★★★★★★★★★ */
+    gap: 10px;
+    width: 220px;
+}
+
+
+/* 카드 배지 */
+.badge_card{
+    width: 220px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+/* 카드 배지의 + 아이콘 */
+.badge_plus{
+    font-size: 18px;
+    font-weight: bold;
+}
+.badge_card:hover{
+    background-color: gray;
+    color: white;
+}
+/* 카드 이미지 */
+.thumb_img img{
+    width: 220px;
+}
+
+.thumb_img{
+    position: relative;
+}
+/* 카드 안에 좋아요 아이콘 */
+.badge_like{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    color: transparent;
+    display: inline-block;
+    vertical-align: center;
+    text-align: center;
+}
+.thumb_img:hover .badge_like{
+    color:black;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+/* prime 배지 */
+.badge_prime{
+    color: white;
+    background-color: black;
+    font-style: italic;
+    padding: 3px 15px;
+    border-radius: 20px;
+}
+/* prime 없는 거 none 처리 */
+.item3 span.badge_prime,
+.item4 span.badge_prime,
+.item8 span.badge_prime,
+.item9 span.badge_prime,
+.item12 span.badge_prime{
+    display: none;
+}
+
+/* 별점 및 리뷰 css*/
+.ratingBox{
+    width: 220px;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+.star_point:before{
+    content: '★';
+    color: green;
+    margin-right: 5px;
+}
+.review_cnt{
+    color: gray;
+}
+.review_cnt:before{
+    content:'(';
+}
+.review_cnt:after{
+    content:')';
+}
+/* 판매자 css */
+.seller_info{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+}
+.seller_info img{
+    width: 20px;
+}
+.seller_name{
+    font-size: 13px;
+}
+/* ------------------------------------------------------------------ */
+/* 푸터 */
+footer{
+    border-top: 2px solid black;
+}
+/* 푸터 상단 */
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/* 푸터 상단의 왼쪽 */
+.footer_top_left{
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    align-items: center;
+    width: 900px;
+}
+.cert_item1,
+.cert_item2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cert_item1 img{
+    width: 30px;
+    margin-right: 10px;
+}
+.cert_item2 img{
+    width: 120px;
+    margin-right: 10px;
+}
+.cert_item1 p,
+.cert_item2 p{
+    font-size: 11px;
+    color: gray;
+}
+
+/* 푸터 상단의 오른쪽 */
+.footer_top_right{
+    display: flex;
+    justify-content: right;
+    gap:20px;
+}
+.app{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 100px;
+}
+.app p{
+    font-size: 8px;
+
+}
+.app img{
+    width: 20px;
+    margin-right: 5px;
+}
+.sns img{
+    width: 30px;
+}
+
+/* 푸터 하단 */
+.footer_bottom p{
+    color: gray;
+    font-size: 12px;
+}
+.footer_bottom span.bold{
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}

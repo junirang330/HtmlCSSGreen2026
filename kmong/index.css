@@ -10,6 +10,7 @@ body{
     padding: 20px;
     margin: 0 auto;
     /* width: 1200px; */
+    min-width: 1200px;
 }
 
 /* ul에 있는 리스트 스타일 공통적으로 제거 */
@@ -25,7 +26,7 @@ a{
 /* header 부분 -------------------------------------------------------------------------------- */
 /* 헤드의 inner flex주기 */
 #header{
-    min-width: 1200px;  /* 너비 최소 1200으로  */
+    width: 1200px;  /* 너비 최소 1200으로  */
     margin: 20px auto;
 }
 #header .header_top{
@@ -167,6 +168,7 @@ li.menu_img2{
     justify-content: space-between;
     margin: 30PX auto;
 
+
 }
 .group{
     width: 180px;
@@ -264,7 +266,9 @@ li.security2 img{
 /* footer 부분 ---------------------------------------------------------------------------------- */
 /* footer에서 top부분 */
 #footer{
-    margin: 0 70px;
+    margin: 0 auto;
+    width: 1200px;
+
 }
 #footer div.footer_top{
     display: flex;

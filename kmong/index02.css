@@ -1,0 +1,197 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 15px;
+    min-width: 1200px;
+    background-color: white;
+    margin: 0 auto;
+}
+/* ul에 있는 리스트 스타일 공통적으로 제거 */
+ul{
+    list-style: none;
+}
+/* a 태그들 공통 CSS */
+a{
+    text-decoration: none;
+    color: black;
+}
+/* inner(헤더/푸터) CSS */
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* ---------------------------------------------------------- */
+header{
+    background-color: white;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #222;
+}
+/* header_top */
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+}
+/* 로고 + 검색 CSS */
+.header_top img{
+    width: 120px;
+}
+.searchBox{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 550px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.search{
+    border: none;
+    width: 550px;
+}
+.search:focus{
+    outline: none;
+}
+.search::placeholder{
+    vertical-align: center;
+}
+img.glasses{
+    width: 20px;
+}
+/* 회원 및 서비스 바로가기 CSS */
+.user_nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+/* 카테고리 네비게이션 바 */
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+}
+/* 서비스 카테고리 목록 CSS */
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.nav_list li{
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+/* 마우스 이벤트, 클릭 */
+.nav_list li a{
+    display: inline-block;
+    color: #222;
+    padding-bottom: 12px;
+    /* 밑줄을 투명하게 CSS : transparent */
+    border-bottom: 4px solid transparent;
+}
+.nav_list li a.active{
+    border-bottom-color: #222;
+}
+/* 부가서비스 링크 CSS */
+.nav_etc{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav_etc li{
+    display: flex;
+
+    height: 70px;
+    align-items: center;
+    
+}
+.nav_etc li a{
+    display: inline-block;
+    color:#222;
+    padding-bottom: 12px;
+    border-bottom: 4px solid transparent;
+}
+.nav_etc li a.active{
+    border-bottom-color: blueviolet;
+}
+/* ---------------------------------------------------------- */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: center;
+    margin: 80px auto;
+    /* border-bottom: 1px solid #222; */
+    /* width: 1200px; */
+}
+
+
+/* 카드 이미지 CSS */
+.thumb_img{
+    width: 130px;
+
+}
+/* seller 부분 CSS */
+.seller_icon{
+    width: 30px;
+}
+/* ---------------------------------------------------------- */
+footer{
+    padding-top: 30px;
+    border-top: 1px solid #222;
+}
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+}
+ul.footer_top_left{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+}
+/* 보안 이미지 크기 */
+ul.footer_top_left li.kmong_logo img{
+    width: 150px;
+}
+.cert_item1 img{
+    width: 30px;
+}
+.cert_item2 img{
+    width:110px;
+}
+.cert_item1 p,
+.cert_item2 p{
+    color: gray;
+    font-size: 9px;
+}
+ul.footer_top_right{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+.sns_item1 a{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 140px;
+    padding: 5px;
+    align-items: center;
+}
+.sns_item1 a p{
+    font-size: 11px;
+}
+.sns_item1 img{
+    width: 30px;
+}
+
+.sns_item2 img{
+    width: 40px;
+}

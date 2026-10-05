@@ -1,0 +1,403 @@
+@charset 'utf-8';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 15px;
+    min-width: 1200px;
+}
+ul{
+    list-style: none;   /* li 점 없애기 */
+}
+a{   /* a 공통 css */
+    text-decoration: none;
+    color: black;
+}
+/* inner (헤더/푸터 공통 css) */
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* 헤더 부분 */
+header{
+    border-bottom: 3px solid black;
+    padding-bottom: 30px;
+    margin: 30px auto;
+}
+
+/* 헤더 상단 */
+.header_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 상단에서 왼쪽 부분 */
+.header_top_left{
+    display: flex;
+    justify-content: space-between;
+}
+/* 크몽 이미지 */
+.kmong_logo1{
+    width: 180px;
+}
+/* 검색창 css*/
+.searchBox{
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 400px;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.search{
+    border: none;
+}
+.search:focus{
+    outline: none;
+}
+
+/* AI추천 글자 CSS */
+.ai_recommend{
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    width: 60px;
+    display: inline-block;
+}
+
+/* 상단에서 오른쪽 부분 */
+.user_nav{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.user_nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  /* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+}
+
+
+/* 헤더 하단 부분 */
+.header_bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* 하단에서 카테고리 nav_list 부분 */
+.nav_list{
+    display: flex;
+    justify-content: space-around;  /* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+    align-items: center;
+    width: 900px;
+}
+.nav_list li,
+.nav_etc li{
+    display: flex;  /* ★★★★★★★★★★★★★★★★★★★★★★★  */
+    align-items: center;  /* ★★★★★★★★★★★★★★★★★★★★★★★ */
+}
+
+/* 하단에서 부가서비스 부분 nav_etc  */
+.nav_etc{
+    display: flex;
+    justify-content: space-around;   /* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+    align-items: center;
+    width: 300px;
+}
+
+/* 자바스크립트 마우스 효과 CSS */
+.nav_list li a{
+    display: inline-block;
+    color: #222;
+    border-bottom: 4px solid transparent;
+}
+.nav_list li a.active{
+    border-bottom-color: black;
+}
+.nav_etc li a{
+    display: inline-block;
+    color: #222;
+    border-bottom: 4px solid transparent;
+}
+.nav_etc li a.active{
+    border-bottom-color: black;
+}
+
+/* 회원 네비게이션 자바스크립트 CSS */
+.user_nav li a{
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+.user_nav li a.active{
+    border-bottom-color: dodgerblue;
+}
+
+.badge_biz {
+    background-color: #eaf2fe;
+    color: #3b82f6;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* 섹션 부분 */
+section{
+    margin: 60px auto;
+    width: 1200px;
+}
+/* 행별 타이틀(1열) CSS */
+.recommend_row{
+    display: flex;
+    justify-content: space-around;
+}
+/* 행별 타이틀(1열) CSS */
+.row_title{
+    width: 240px;
+    /* display: inline-block; */
+}
+
+/* 하이라이트 */
+.highlight1{
+    background-color: rgb(185, 185, 234);
+}
+.highlight2{
+    background-color: rgb(255, 250, 210);
+}
+.highlight3{
+    background-color: rgb(210, 234, 185);
+}
+
+/* 카드리스트 (행별 카드 묶음 - 4개 전체) CSS */
+.card_list{
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+    margin-bottom: 40px;
+}
+/* card_item css */
+.card_item{
+    width: 220px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-content: flex-start;  /* ★★★★★★★★★★★★★★★★★★★★★★★ */
+    gap: 10px;  /* ★★★★★★★★★★★★★★★★★★★★ */
+
+}
+
+/* ★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+.card_title {
+    width: 220px;
+    font-size: 14px;
+    min-height: 42px; /* 두 줄 분량 높이를 확보해 별점 라인을 수평으로 맞춤 */
+    line-height: 1.4;
+}
+
+/* 카드 배지 */
+.card_badge{
+    width: 220px;
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+    /* margin-bottom: 10px; */
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_badge:hover{
+    background-color: lightgray;
+}
+
+/* 카드 이미지 */
+.thumb_img{
+    width: 220px;
+}
+
+/* prime 배지 */
+.badge_prime{
+    color:white;
+    background-color: black;
+    padding: 6px 10px;
+    /* width: 80px; */
+    /* margin : 10px 0; */
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.item3 span.badge_prime,
+.item4 span.badge_prime,
+.item5 span.badge_prime,
+.item8 span.badge_prime,
+.item9 span.badge_prime,
+.item11 span.badge_prime,
+.item12 span.badge_prime{
+    display: none;
+}
+
+/* 별점 및 리뷰 */
+.rating_box{
+    width: 220px;   /* ★★★★★★★★★★★★★★★★★★★★★ */
+    display: flex;
+    justify-content: left;
+}
+
+.star_point::before{
+    content: '☆';
+    color: rgb(189, 189, 12);
+    font-weight: bold;
+}
+
+.review_cnt{
+    color: gray;
+
+}
+.review_cnt::before{
+    content: ' (';
+}
+.review_cnt::after{
+    content: ')';
+}
+.price{
+    font-weight: bold;
+    width: 220px;
+    font-size: 18px;
+}
+/* 셀러 정보  */
+.seller_info{
+    width: 220px;  /* ★★★★★★★★★★★★★★★★★★★★★ */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+/* 셀러 아이콘 */
+.seller_icon {
+    width: 15px;
+    margin-right: 5px;
+    height: 15px;        /* 👈 높이도 명시적으로 고정 ★★★★★★★★ */ 
+    display: block;      /* 👈 이미지 하단 인라인 여백 제거 ★★★★★★★★ */
+}
+
+/* 셀러 이름 글자 (핵심!) */
+.seller_name {
+    font-size: 13px;
+    line-height: 1;      /* 👈 글자 위아래 불필요한 줄높이 여백 제거 ★★★★★ */
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* 푸터 부분 */
+footer{
+    border-top: 3px solid black;
+    padding-top: 30px;
+}
+
+/* 푸터 상단 */
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* 푸터 왼쪽 상단 */
+.footer_top_left{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* 크몽 로고 css */
+.footer_top_left img.kmong_logo2{
+    width: 120px;
+}
+
+.cert_item1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.cert_item1 img{
+    width: 40px;
+}
+
+.cert_item1 p{
+    font-size: 8px;
+    color: gray;
+}
+
+.cert_item2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.cert_item2 img{
+    width: 160px;
+}
+
+.cert_item2 p{
+    font-size: 8px;
+    color: gray;
+}
+
+/* 우측상단 */
+.footer_top_right{
+    display: flex;
+    justify-content: space-between;
+}
+.sns{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+.sns_item1 a{
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    /* line-height: 50px; */
+}
+.sns_item1 img{
+    width: 20px;
+    margin-right: 10px;
+}
+.sns_item1 p{
+    font-size: 10px;
+}
+.sns_item2 img{
+    width: 40px;
+}
+
+/* 푸터 하단 */
+.footer_desc p{
+    color: gray;
+    font-size: 12px;
+}
+span.bold{
+    font-weight: bold;
+    color: black;
+}
+
