@@ -53,6 +53,7 @@ header{
     display: flex;
     justify-content: space-between;
     width: 380px;
+    height: 60px;
 }
 /* 검색창영역 전체 호버 */
 .searchBox:hover{
@@ -224,10 +225,19 @@ section{
     color: transparent;
 }
 /* 이미지에 호버 햇을때, 배지 보이게 하기 */
+.badgeLike_box{
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.thumb_img:hover .badgeLike_box{
+    border-color: black;
+    /* border-radius: 50%; */
+}
+
 .thumb_img:hover span.badge_like{
     color: black;
-    border: 1px solid black;
-    border-radius: 50%;
+    /* border: 1px solid black; */
+    
 }
 
 /* 카드 배지 */
